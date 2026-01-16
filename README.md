@@ -79,17 +79,17 @@ Password: password123
 
 ---
 
-## 📸 Capturas del proyecto
+## Capturas del proyecto
 
-### 🔐 Login
+### Login
 ![Login](screenshots/login.png)
 ![Login](screenshots/login_message.png)
 ![Login](screenshots/login_pass.png)
 
-### 📊 Dashboard
+### Dashboard
 ![Dashboard](screenshots/users.png)
 
-### ➕ Crear usuario
+### Crear usuario
 ![Crear usuario](screenshots/create_user.png)
 ![Crear usuario](screenshots/create_user_message.png)
 ![Crear usuario](screenshots/edit_user.png)
