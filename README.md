@@ -36,7 +36,7 @@ composer install
 cp .env.example .env
 
 3.2 Editar el archivo .env y configurar la conexión a la base de datos:
-
+(Requiere crear base de datos "pruebalaravel_db", los valores de usuario son los default por MySQL)
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -44,46 +44,55 @@ DB_DATABASE=pruebalaravel_db
 DB_USERNAME=root
 DB_PASSWORD=
 
-Generar la key de la aplicación
-
+3.3 Generar la key de la aplicación
 php artisan key:generate
 
 ---
 
 ### Base de datos ###
 
-Ejecutar migracion
+Ejecutar migracion:
+(Crea la tabla users con los campos: id, name, email, password, created_at/updated_at)
 
 php artisan migrate
 
-(Crea la tabla users con los campos: id, name, email, password, created_at/updated_at)
-
-2. Ejecutar seeder
+2. Ejecutar seeder:
+(Crea usuario administrador)
 
 php artisan db:seed
-
-(Crea usuario administrador)
 
 ---
 
 Credenciales de acceso (Seeder)
 
-Panel administrativo:
+Abrir panel administrativo:
 
-URL: http://127.0.0.1:8000/admin
-Email: admin@admin.com
-Password: password123
-
----
-
-1. Correr el servidor
+1. Correr el servidor en la carpeta raíz del proyecto
 
 php artisan serve
 
 2. Abrir en el navegador:
 
 http://127.0.0.1:8000/admin
+Email: admin@admin.com
+Password: password123
 
 ---
 
-Proyecto desarrollado por Nemesis Sierra
+## 📸 Capturas del proyecto
+
+### 🔐 Login
+![Login](screenshots/login.png)
+![Login](screenshots/login_message.png)
+![Login](screenshots/login_pass.png)
+
+### 📊 Dashboard
+![Dashboard](screenshots/users.png)
+
+### ➕ Crear usuario
+![Crear usuario](screenshots/create_user.png)
+![Crear usuario](screenshots/create_user_message.png)
+![Crear usuario](screenshots/edit_user.png)
+![Crear usuario](screenshots/users2.png)
+
+por Nemesis Sierra
